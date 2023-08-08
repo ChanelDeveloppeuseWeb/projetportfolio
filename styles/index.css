@@ -1,5 +1,6 @@
 :root {
   --gray: #f9fafb;
+  --bluechild:#111827;
   --graychild: #9ca3af;
   --white: #fff;
   --green: #57c14a;
@@ -44,11 +45,19 @@ body {
   padding: 10px 20px;
   color: #030712;
   border-radius: 15px;
-  /* margin-left: 0; */
+  text-align: center;
+}
+.navbar a:nth-last-child(1):hover{
+  background-color: var(--bluechild);
+  color: var(--white);
+  cursor: pointer;
+  transition: .2s;
+
 }
 .navbar svg {
   vertical-align: text-bottom;
   opacity: 0.2;
+  
 }
 /* end navbar? /
 
@@ -60,7 +69,7 @@ body {
   padding: 0 10%;
 }
 .banner-content{
-  max-width: 600px;
+  max-width:800px;
 }
 .banner-content h1{
   font-size: 70px;
@@ -74,5 +83,22 @@ body {
 }
 .banner-content svg{
   vertical-align: text-top;
+}
+.banner-localisation .banner-local{
+  margin-bottom: 10px;
+}
+.banner-localisation .banner-local svg{
+vertical-align: text-bottom;
+}
+.banner-links{
+  margin-top: 50px;
+}
+.banner-links svg{
+  padding-left: 15px;
+  transition: .4s;
+}
+.banner-links svg:hover{
+ color: var(--green);
+ opacity: 0.2;
 }
 /* end banner */
