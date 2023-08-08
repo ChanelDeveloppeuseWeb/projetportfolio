@@ -1,0 +1,78 @@
+:root {
+  --gray: #f9fafb;
+  --graychild: #9ca3af;
+  --white: #fff;
+  --green: #57c14a;
+  --black: #121212;
+  --blue: #030712;
+  --fonts:lato,sans-serif;
+}
+ @font-face{
+    font-family:lato;
+    src: url(../assets/fonts/Lato-Regular.ttf);
+}
+
+body {
+  font-family: var(--fonts);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--blue);
+  color: var(--white);
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  /* background: var(--green); */
+}
+.logo {
+  text-decoration: none;
+  font-size: 44px;
+  color: var(--white);
+}
+.navbar a {
+  text-decoration: none;
+  margin-left: 25px;
+  color: var(--white);
+  padding: 14.5px 15px;
+}
+.navbar a:nth-last-child(1) {
+  background: var(--white);
+  padding: 10px 20px;
+  color: #030712;
+  border-radius: 15px;
+  /* margin-left: 0; */
+}
+.navbar svg {
+  vertical-align: text-bottom;
+  opacity: 0.2;
+}
+/* end navbar? /
+
+/* banner */
+.banner{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10%;
+}
+.banner-content{
+  max-width: 600px;
+}
+.banner-content h1{
+  font-size: 70px;
+  font-weight: 500;
+  
+}
+.banner-content p{
+  font-size: 18px;
+  line-height: 1.5;
+  
+}
+.banner-content svg{
+  vertical-align: text-top;
+}
+/* end banner */
