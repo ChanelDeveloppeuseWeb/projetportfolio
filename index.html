@@ -12,10 +12,15 @@
     <header class="header">
       <a href="#" class="logo">Chanel</a>
       <nav class="navbar">
-        <a href="">About</a>
-        <a href="">Work</a>
-        <a href="">Testimonial</a>
-        <a href="">Contact</a>
+        <label for="menu-toggle" class="menu-btn">
+          <span class="menu-icon"></span>
+        </label>
+        <ul class="menu">
+          <li><a href="#About">About</a></li>
+          <li><a href="#Work">Work</a></li>
+          <li><a href="#Testimonials">Testimonials</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -39,70 +44,187 @@
             d="M14.828 14.828a4 4 0 1 0-5.656-5.656a4 4 0 0 0 5.656 5.656zm-8.485 2.829l-1.414 1.414M6.343 6.343L4.929 4.929m12.728 1.414l1.414-1.414m-1.414 12.728l1.414 1.414M4 12H2m10-8V2m8 10h2m-10 8v2"
           />
         </svg>
-        <a href="">Download CV</a>
+        <div class="dowload">
+          <a href="">Download CV</a>
+        </div>
       </nav>
     </header>
+    <!-- end header -->
+
+    <!-- banner -->
     <div class="banner">
       <div class="banner-content">
-        <h1>
-          Hi, I'm Chanel
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="80"
-            height="80"
-            viewBox="0 0 512 512"
-          >
-            <path
-              fill="#ffca28"
-              d="M238.4 255.5c-9.2-3.1-27.5-5-45.4 37.2c-2.9 6.9-7.1 12.6-8 7.3V154c0-10.2-8-18.4-18.2-18.4s-18.5 8.2-18.5 18.4v92.9c0 8.7-11.2 9.4-13.2 2.3v-111c0-10.2-8-18.4-18.2-18.4s-18.5 8.2-18.5 18.4v111.2c-1.4 6.8-11.4 6.5-12.2-.8v-97.1c0-10.2-8-18.4-18.2-18.4s-18.5 8.2-18.5 18.4v95.6c-.1.1-.1.4-.1.7c0 8.3-10.7 9.1-12.7 2.3v-68.5c0-10.2-8-18.4-18.2-18.4c-10.2.1-18.5 8.4-18.5 18.5v161.1c0 32.7 19.2 60.9 47 74V443c0 10.2 8.3 18.4 18.4 18.4h73.7c10.2 0 18.4-8.3 18.4-18.4v-18.6c12.2-1.4 22.9-7.8 29.8-17.3c.1-.1.2-.3.3-.4c.2-.3.4-.5.6-.8c5.6-6.4 34.9-78.1 58.5-126.6c3.8-9.5.9-20.7-8.3-23.8z"
-            />
-            <path
-              fill="#ffca28"
-              d="M273.2 44.5c-.5-.7-1.4-1.1-2.2-1.1h-30.9c-.9 0-1.7.4-2.2 1.1c-.5.7-.7 1.6-.5 2.5l15.4 55.5c.3 1.2 1.4 2.1 2.7 2.1c1.3 0 2.4-.8 2.7-2.1L273.6 47c.3-.9.1-1.8-.4-2.5zm81.3 38.2l-21.8-21.8c-.6-.6-1.5-.9-2.4-.8c-.9.1-1.6.6-2.1 1.4l-28.3 50.2c-.6 1.1-.4 2.5.5 3.4c.5.5 1.3.8 2 .8c.5 0 .9-.1 1.4-.4L354 87.2c.8-.4 1.3-1.2 1.4-2.1c0-.9-.3-1.7-.9-2.4zm-142.5 29l-28.3-50.2c-.4-.8-1.2-1.3-2.1-1.4c-.9-.1-1.7.2-2.4.8l-21.8 21.8c-.6.6-.9 1.5-.8 2.4s.6 1.6 1.4 2.1l50.2 28.3c.4.2.9.4 1.4.4c.7 0 1.4-.3 2-.8c.8-.9 1-2.3.4-3.4z"
-            />
-            <path
-              fill="#ffca28"
-              d="M493.4 163.3c-10.2 0-18.2 8.2-18.2 18.4v68.5c-2 6.8-12.7 6-12.7-2.3c0-.3 0-.5-.1-.7v-95.6c0-10.1-8.3-18.4-18.5-18.4s-18.2 8.2-18.2 18.4v97.1c-.7 7.3-10.8 7.5-12.2.8V138.2c0-10.1-8.3-18.4-18.5-18.4s-18.2 8.2-18.2 18.4v110.9c-2 7.1-13.2 6.4-13.2-2.3V154c0-10.2-8.3-18.4-18.5-18.4s-18.2 8.2-18.2 18.4v146.1c-1 5.3-5.1-.4-8-7.3c-17.8-42.2-36.2-40.3-45.4-37.2c-9.2 3.1-12.1 14.2-8.3 23.7c23.6 48.5 52.9 120.2 58.5 126.6c.2.3.4.5.6.8c.1.1.2.3.3.4c6.9 9.4 17.6 15.9 29.8 17.3V443c0 10.2 8.3 18.4 18.4 18.4h73.7c10.2 0 18.4-8.3 18.4-18.4v-26.2c27.8-13.1 47-41.3 47-74V181.7c0-10.1-8.3-18.4-18.5-18.4z"
-            />
-            <path
-              fill="#ffca28"
-              d="M430.2 424.5h-14.9l.1.1h-57c-1.3 0-2.6-.1-3.9-.3v16.3c3.3 1.4 6.4 2.3 9.1 2.3h92.1c2.7 0 5.9-1.1 9.3-2.8v-23.3c-10.6 4.9-22.4 7.7-34.8 7.7zm-276.6.1h-57l.1-.1h-15c-12.4 0-24.2-2.8-34.7-7.7v23.3c3.4 1.7 6.5 2.8 9.3 2.8h92.1c2.7 0 5.8-.9 9.1-2.3v-16.3c-1.3.2-2.6.3-3.9.3z"
-            />
-          </svg>
-        </h1>
-        <p>
-          I'm a full stack Developer (React.js & Node.js) with a focus on
-          creating (and occasionally designing) exceptional digital experiences
-          that are fast,accessible,visually appenling, and responsive.Even
-          though I have been creating web applications for un 1 years,I still
-          love it as if it was something new.
-        </p>
-        <div class="banner-picture">
-          <!-- <img
-            src="assets/images/IMG-20211029-WA0027-removebg-preview.png"
-            alt=""
-          /> -->
-        </div>
-        <div class="banner-localisation">
-          <div class="banner-local">
+        <div class="banner-layout">
+          <h1>
+            Hi,I'm Chanel
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
+              width="80"
+              height="80"
+              viewBox="0 0 512 512"
             >
               <path
-                fill="white"
-                d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2zm6-1.8C18 6.57 15.35 4 12 4s-6 2.57-6 6.2c0 2.34 1.95 5.44 6 9.14c4.05-3.7 6-6.8 6-9.14zM12 2c4.2 0 8 3.22 8 8.2c0 3.32-2.67 7.25-8 11.8c-5.33-4.55-8-8.48-8-11.8C4 5.22 7.8 2 12 2z"
+                fill="#ffca28"
+                d="M238.4 255.5c-9.2-3.1-27.5-5-45.4 37.2c-2.9 6.9-7.1 12.6-8 7.3V154c0-10.2-8-18.4-18.2-18.4s-18.5 8.2-18.5 18.4v92.9c0 8.7-11.2 9.4-13.2 2.3v-111c0-10.2-8-18.4-18.2-18.4s-18.5 8.2-18.5 18.4v111.2c-1.4 6.8-11.4 6.5-12.2-.8v-97.1c0-10.2-8-18.4-18.2-18.4s-18.5 8.2-18.5 18.4v95.6c-.1.1-.1.4-.1.7c0 8.3-10.7 9.1-12.7 2.3v-68.5c0-10.2-8-18.4-18.2-18.4c-10.2.1-18.5 8.4-18.5 18.5v161.1c0 32.7 19.2 60.9 47 74V443c0 10.2 8.3 18.4 18.4 18.4h73.7c10.2 0 18.4-8.3 18.4-18.4v-18.6c12.2-1.4 22.9-7.8 29.8-17.3c.1-.1.2-.3.3-.4c.2-.3.4-.5.6-.8c5.6-6.4 34.9-78.1 58.5-126.6c3.8-9.5.9-20.7-8.3-23.8z"
+              />
+              <path
+                fill="#ffca28"
+                d="M273.2 44.5c-.5-.7-1.4-1.1-2.2-1.1h-30.9c-.9 0-1.7.4-2.2 1.1c-.5.7-.7 1.6-.5 2.5l15.4 55.5c.3 1.2 1.4 2.1 2.7 2.1c1.3 0 2.4-.8 2.7-2.1L273.6 47c.3-.9.1-1.8-.4-2.5zm81.3 38.2l-21.8-21.8c-.6-.6-1.5-.9-2.4-.8c-.9.1-1.6.6-2.1 1.4l-28.3 50.2c-.6 1.1-.4 2.5.5 3.4c.5.5 1.3.8 2 .8c.5 0 .9-.1 1.4-.4L354 87.2c.8-.4 1.3-1.2 1.4-2.1c0-.9-.3-1.7-.9-2.4zm-142.5 29l-28.3-50.2c-.4-.8-1.2-1.3-2.1-1.4c-.9-.1-1.7.2-2.4.8l-21.8 21.8c-.6.6-.9 1.5-.8 2.4s.6 1.6 1.4 2.1l50.2 28.3c.4.2.9.4 1.4.4c.7 0 1.4-.3 2-.8c.8-.9 1-2.3.4-3.4z"
+              />
+              <path
+                fill="#ffca28"
+                d="M493.4 163.3c-10.2 0-18.2 8.2-18.2 18.4v68.5c-2 6.8-12.7 6-12.7-2.3c0-.3 0-.5-.1-.7v-95.6c0-10.1-8.3-18.4-18.5-18.4s-18.2 8.2-18.2 18.4v97.1c-.7 7.3-10.8 7.5-12.2.8V138.2c0-10.1-8.3-18.4-18.5-18.4s-18.2 8.2-18.2 18.4v110.9c-2 7.1-13.2 6.4-13.2-2.3V154c0-10.2-8.3-18.4-18.5-18.4s-18.2 8.2-18.2 18.4v146.1c-1 5.3-5.1-.4-8-7.3c-17.8-42.2-36.2-40.3-45.4-37.2c-9.2 3.1-12.1 14.2-8.3 23.7c23.6 48.5 52.9 120.2 58.5 126.6c.2.3.4.5.6.8c.1.1.2.3.3.4c6.9 9.4 17.6 15.9 29.8 17.3V443c0 10.2 8.3 18.4 18.4 18.4h73.7c10.2 0 18.4-8.3 18.4-18.4v-26.2c27.8-13.1 47-41.3 47-74V181.7c0-10.1-8.3-18.4-18.5-18.4z"
+              />
+              <path
+                fill="#ffca28"
+                d="M430.2 424.5h-14.9l.1.1h-57c-1.3 0-2.6-.1-3.9-.3v16.3c3.3 1.4 6.4 2.3 9.1 2.3h92.1c2.7 0 5.9-1.1 9.3-2.8v-23.3c-10.6 4.9-22.4 7.7-34.8 7.7zm-276.6.1h-57l.1-.1h-15c-12.4 0-24.2-2.8-34.7-7.7v23.3c3.4 1.7 6.5 2.8 9.3 2.8h92.1c2.7 0 5.8-.9 9.1-2.3v-16.3c-1.3.2-2.6.3-3.9.3z"
               />
             </svg>
-            <span>Yaounde,Cameroun</span>
+          </h1>
+          <p>
+            I'm a full stack Developer (React.js & Node.js) with a focus on
+            creating (and occasionally designing) exceptional digital
+            experiences that are fast,accessible,visually appenling, and
+            responsive.Even though I have been creating web applications for un
+            1 years,I still love it as if it was something new.
+          </p>
+          <div class="banner-localisation">
+            <div class="banner-local">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="white"
+                  d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2zm6-1.8C18 6.57 15.35 4 12 4s-6 2.57-6 6.2c0 2.34 1.95 5.44 6 9.14c4.05-3.7 6-6.8 6-9.14zM12 2c4.2 0 8 3.22 8 8.2c0 3.32-2.67 7.25-8 11.8c-5.33-4.55-8-8.48-8-11.8C4 5.22 7.8 2 12 2z"
+                />
+              </svg>
+              <span>Yaounde,Cameroun</span>
+            </div>
+            <div class="banner-local">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                >
+                  <path d="M0 0h24v24H0z" />
+                  <path
+                    fill="#10b981"
+                    d="M12 7a5 5 0 1 1-4.995 5.217L7 12l.005-.217A5 5 0 0 1 12 7z"
+                  />
+                </g>
+              </svg>
+              <span>Available for new projects</span>
+            </div>
+            <div class="banner-links">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 15 15"
+              >
+                <path
+                  fill="white"
+                  d="M5.65 12.477a.5.5 0 1 0-.3-.954l.3.954Zm-3.648-2.96l-.484-.128l-.254.968l.484.127l.254-.968ZM9 14.5v.5h1v-.5H9Zm.063-4.813l-.054-.497a.5.5 0 0 0-.299.852l.352-.354ZM12.5 5.913h.5V5.91l-.5.002Zm-.833-2.007l-.466-.18a.5.5 0 0 0 .112.533l.354-.353Zm-.05-2.017l.456-.204a.5.5 0 0 0-.319-.276l-.137.48Zm-2.173.792l-.126.484a.5.5 0 0 0 .398-.064l-.272-.42Zm-3.888 0l-.272.42a.5.5 0 0 0 .398.064l-.126-.484ZM3.383 1.89l-.137-.48a.5.5 0 0 0-.32.276l.457.204Zm-.05 2.017l.354.353a.5.5 0 0 0 .112-.534l-.466.181ZM2.5 5.93H3v-.002l-.5.002Zm3.438 3.758l.352.355a.5.5 0 0 0-.293-.851l-.06.496ZM5.5 11H6l-.001-.037L5.5 11ZM5 14.5v.5h1v-.5H5Zm.35-2.977c-.603.19-.986.169-1.24.085c-.251-.083-.444-.25-.629-.49a4.8 4.8 0 0 1-.27-.402c-.085-.139-.182-.302-.28-.447c-.191-.281-.473-.633-.929-.753l-.254.968c.08.02.184.095.355.346c.082.122.16.252.258.412c.094.152.202.32.327.484c.253.33.598.663 1.11.832c.51.168 1.116.15 1.852-.081l-.3-.954Zm4.65-.585c0-.318-.014-.608-.104-.878c-.096-.288-.262-.51-.481-.727l-.705.71c.155.153.208.245.237.333c.035.105.053.254.053.562h1Zm-.884-.753c.903-.097 1.888-.325 2.647-.982c.78-.675 1.237-1.729 1.237-3.29h-1c0 1.359-.39 2.1-.892 2.534c-.524.454-1.258.653-2.099.743l.107.995ZM13 5.91a3.354 3.354 0 0 0-.98-2.358l-.707.706c.438.44.685 1.034.687 1.655l1-.003Zm-.867-1.824c.15-.384.22-.794.21-1.207l-1 .025a2.12 2.12 0 0 1-.142.82l.932.362Zm.21-1.207a3.119 3.119 0 0 0-.27-1.195l-.913.408c.115.256.177.532.184.812l1-.025Zm-.726-.99c.137-.481.137-.482.136-.482h-.003l-.004-.002a.462.462 0 0 0-.03-.007a1.261 1.261 0 0 0-.212-.024a2.172 2.172 0 0 0-.51.054c-.425.091-1.024.317-1.82.832l.542.84c.719-.464 1.206-.634 1.488-.694a1.2 1.2 0 0 1 .306-.03l-.008-.001a.278.278 0 0 1-.01-.002l-.006-.002h-.003l-.002-.001c-.001 0-.002 0 .136-.482Zm-2.047.307a8.209 8.209 0 0 0-4.14 0l.252.968a7.209 7.209 0 0 1 3.636 0l.252-.968Zm-3.743.064c-.797-.514-1.397-.74-1.822-.83a2.17 2.17 0 0 0-.51-.053a1.259 1.259 0 0 0-.241.03l-.004.002h-.003l.136.481l.137.481h-.001l-.002.001l-.003.001a.327.327 0 0 1-.016.004l-.008.001h.008a1.19 1.19 0 0 1 .298.03c.282.06.769.23 1.488.694l.543-.84Zm-2.9-.576a3.12 3.12 0 0 0-.27 1.195l1 .025a2.09 2.09 0 0 1 .183-.812l-.913-.408Zm-.27 1.195c-.01.413.06.823.21 1.207l.932-.362a2.12 2.12 0 0 1-.143-.82l-1-.025Zm.322.673a3.354 3.354 0 0 0-.726 1.091l.924.38c.118-.285.292-.545.51-.765l-.708-.706Zm-.726 1.091A3.354 3.354 0 0 0 2 5.93l1-.003c0-.31.06-.616.177-.902l-.924-.38ZM2 5.93c0 1.553.458 2.597 1.239 3.268c.757.65 1.74.88 2.64.987l.118-.993C5.15 9.09 4.416 8.89 3.89 8.438C3.388 8.007 3 7.276 3 5.928H2Zm3.585 3.404c-.5.498-.629 1.09-.584 1.704L6 10.963c-.03-.408.052-.683.291-.921l-.705-.709ZM5 11v3.5h1V11H5Zm5 3.5V13H9v1.5h1Zm0-1.5v-2.063H9V13h1Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="white"
+                  d="M19.913 5.322a1.034 1.034 0 0 1 .837 1.629l-1.042 1.481c-.064 5.086-1.765 8.539-5.056 10.264A10.917 10.917 0 0 1 9.6 19.835a12.233 12.233 0 0 1-6.2-1.524a.76.76 0 0 1-.317-.8a.768.768 0 0 1 .63-.6a20.6 20.6 0 0 0 3.745-.886C2 13.5 3.19 7.824 3.71 6.081a1.028 1.028 0 0 1 1.729-.422a9.931 9.931 0 0 0 5.995 2.95A4.188 4.188 0 0 1 12.725 5.3a4.125 4.125 0 0 1 5.7.02ZM4.521 17.794c1.862.872 6.226 1.819 9.667.016c2.955-1.549 4.476-4.732 4.521-9.461a.771.771 0 0 1 .142-.436l1.081-1.538l-.041-.053c-.518-.007-1.029-.014-1.55 0a.835.835 0 0 1-.547-.221a3.13 3.13 0 0 0-4.383-.072a3.174 3.174 0 0 0-.935 2.87a.646.646 0 0 1-.154.545a.591.591 0 0 1-.516.205a10.924 10.924 0 0 1-7.084-3.295c-.67 2.078-1.52 7.094 3.869 9.065a.632.632 0 0 1 .416.538a.625.625 0 0 1-.3.6a13.178 13.178 0 0 1-4.186 1.237Zm7.354-9.144Zm7.793-.161Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="white"
+                  fill-rule="evenodd"
+                  d="M10.488 3.788A5.25 5.25 0 0 1 14.2 2.25h2.7a.75.75 0 0 1 .75.75v3.6a.75.75 0 0 1-.75.75h-2.7a.15.15 0 0 0-.15.15v1.95h2.85a.75.75 0 0 1 .728.932l-.9 3.6a.75.75 0 0 1-.728.568h-1.95V21a.75.75 0 0 1-.75.75H9.7a.75.75 0 0 1-.75-.75v-6.45H7a.75.75 0 0 1-.75-.75v-3.6A.75.75 0 0 1 7 9.45h1.95V7.5a5.25 5.25 0 0 1 1.538-3.712ZM14.2 3.75a3.75 3.75 0 0 0-3.75 3.75v2.7a.75.75 0 0 1-.75.75H7.75v2.1H9.7a.75.75 0 0 1 .75.75v6.45h2.1V13.8a.75.75 0 0 1 .75-.75h2.114l.525-2.1H13.3a.75.75 0 0 1-.75-.75V7.5a1.65 1.65 0 0 1 1.65-1.65h1.95v-2.1H14.2Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
           </div>
-          <div class="banner-local">
+        </div>
+
+        <div class="banner-layout">
+          <div class="banner-item">
+          <div class="banner-picture">
+            <img
+            src="assets/images/1.png"
+            alt=""
+          />
+          </div> 
+          <div class="banner-bg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- end header -->
+    <!-- About -->
+    <div class="about" id="#about">
+      <a>About me</a>
+      <div class="about-content">
+        <div class="about-layouts">
+          <div class="about-item">
+            <div class="about-picture">
+              <img src="assets/images/2.png" alt="" />
+            </div>
+            <div class="about-bg"></div>
+          </div>
+        </div>
+        <div class="about-item">
+          <h2>Curious about me?Here you have it:</h2>
+          <p>
+            I'm a passionate,self-prochaimed who specialisez in full stack
+            development (React.js & Node.js).I am very enthusiactic about
+            bringing the technical and visual aspects of digital products to
+            life.User experience,pixel perfect design and writing
+            clear,readable,highly performant code matters to me.
+          </p>
+          <p>
+            I began my journey as a web developer in 2015,and since then,I've
+            continued to grow and evolve as a developer,taking on new challenges
+            and learning the latest technologies along the way.Now,in my early
+            thirties,7 years after starting my web development journey,I'm
+            building cutting-egde web appliactions using modem technologies such
+            as Next.js,TypeScript,Nestjs,Tailwindcss,Supabase and much more.
+          </p>
+          <p>
+            I'm very much a progressive thinker and enjoy working on products
+            end, from ideation all the way to development.
+          </p>
+          <p>
+            when I'm not in full-on developer mode,you can find me hovering
+            around on twitter or on indie hacker,withnessing the journey of
+            early startups or enjoying some free time. You can follow me on
+            twitter where are share tech-related bites and build in public,or
+            you can follow me on GitHub
+          </p>
+          <p>Finally,some quick bits about me</p>
+          <div class="about-text">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
+              width="15"
+              height="15"
               viewBox="0 0 24 24"
             >
               <g
@@ -113,68 +235,120 @@
               >
                 <path d="M0 0h24v24H0z" />
                 <path
-                  fill="#10b981"
+                  fill="white"
                   d="M12 7a5 5 0 1 1-4.995 5.217L7 12l.005-.217A5 5 0 0 1 12 7z"
                 />
               </g>
             </svg>
-            <span>Available for new projects</span>
-          </div>
-          <div class="banner-links">
+            <span>B.E. in Computer Engineering</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 15 15"
-            >
-              <path
-                fill="white"
-                d="M5.65 12.477a.5.5 0 1 0-.3-.954l.3.954Zm-3.648-2.96l-.484-.128l-.254.968l.484.127l.254-.968ZM9 14.5v.5h1v-.5H9Zm.063-4.813l-.054-.497a.5.5 0 0 0-.299.852l.352-.354ZM12.5 5.913h.5V5.91l-.5.002Zm-.833-2.007l-.466-.18a.5.5 0 0 0 .112.533l.354-.353Zm-.05-2.017l.456-.204a.5.5 0 0 0-.319-.276l-.137.48Zm-2.173.792l-.126.484a.5.5 0 0 0 .398-.064l-.272-.42Zm-3.888 0l-.272.42a.5.5 0 0 0 .398.064l-.126-.484ZM3.383 1.89l-.137-.48a.5.5 0 0 0-.32.276l.457.204Zm-.05 2.017l.354.353a.5.5 0 0 0 .112-.534l-.466.181ZM2.5 5.93H3v-.002l-.5.002Zm3.438 3.758l.352.355a.5.5 0 0 0-.293-.851l-.06.496ZM5.5 11H6l-.001-.037L5.5 11ZM5 14.5v.5h1v-.5H5Zm.35-2.977c-.603.19-.986.169-1.24.085c-.251-.083-.444-.25-.629-.49a4.8 4.8 0 0 1-.27-.402c-.085-.139-.182-.302-.28-.447c-.191-.281-.473-.633-.929-.753l-.254.968c.08.02.184.095.355.346c.082.122.16.252.258.412c.094.152.202.32.327.484c.253.33.598.663 1.11.832c.51.168 1.116.15 1.852-.081l-.3-.954Zm4.65-.585c0-.318-.014-.608-.104-.878c-.096-.288-.262-.51-.481-.727l-.705.71c.155.153.208.245.237.333c.035.105.053.254.053.562h1Zm-.884-.753c.903-.097 1.888-.325 2.647-.982c.78-.675 1.237-1.729 1.237-3.29h-1c0 1.359-.39 2.1-.892 2.534c-.524.454-1.258.653-2.099.743l.107.995ZM13 5.91a3.354 3.354 0 0 0-.98-2.358l-.707.706c.438.44.685 1.034.687 1.655l1-.003Zm-.867-1.824c.15-.384.22-.794.21-1.207l-1 .025a2.12 2.12 0 0 1-.142.82l.932.362Zm.21-1.207a3.119 3.119 0 0 0-.27-1.195l-.913.408c.115.256.177.532.184.812l1-.025Zm-.726-.99c.137-.481.137-.482.136-.482h-.003l-.004-.002a.462.462 0 0 0-.03-.007a1.261 1.261 0 0 0-.212-.024a2.172 2.172 0 0 0-.51.054c-.425.091-1.024.317-1.82.832l.542.84c.719-.464 1.206-.634 1.488-.694a1.2 1.2 0 0 1 .306-.03l-.008-.001a.278.278 0 0 1-.01-.002l-.006-.002h-.003l-.002-.001c-.001 0-.002 0 .136-.482Zm-2.047.307a8.209 8.209 0 0 0-4.14 0l.252.968a7.209 7.209 0 0 1 3.636 0l.252-.968Zm-3.743.064c-.797-.514-1.397-.74-1.822-.83a2.17 2.17 0 0 0-.51-.053a1.259 1.259 0 0 0-.241.03l-.004.002h-.003l.136.481l.137.481h-.001l-.002.001l-.003.001a.327.327 0 0 1-.016.004l-.008.001h.008a1.19 1.19 0 0 1 .298.03c.282.06.769.23 1.488.694l.543-.84Zm-2.9-.576a3.12 3.12 0 0 0-.27 1.195l1 .025a2.09 2.09 0 0 1 .183-.812l-.913-.408Zm-.27 1.195c-.01.413.06.823.21 1.207l.932-.362a2.12 2.12 0 0 1-.143-.82l-1-.025Zm.322.673a3.354 3.354 0 0 0-.726 1.091l.924.38c.118-.285.292-.545.51-.765l-.708-.706Zm-.726 1.091A3.354 3.354 0 0 0 2 5.93l1-.003c0-.31.06-.616.177-.902l-.924-.38ZM2 5.93c0 1.553.458 2.597 1.239 3.268c.757.65 1.74.88 2.64.987l.118-.993C5.15 9.09 4.416 8.89 3.89 8.438C3.388 8.007 3 7.276 3 5.928H2Zm3.585 3.404c-.5.498-.629 1.09-.584 1.704L6 10.963c-.03-.408.052-.683.291-.921l-.705-.709ZM5 11v3.5h1V11H5Zm5 3.5V13H9v1.5h1Zm0-1.5v-2.063H9V13h1Z"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="26"
-              height="26"
+              width="15"
+              height="15"
               viewBox="0 0 24 24"
             >
-              <path
-                fill="white"
-                d="M19.913 5.322a1.034 1.034 0 0 1 .837 1.629l-1.042 1.481c-.064 5.086-1.765 8.539-5.056 10.264A10.917 10.917 0 0 1 9.6 19.835a12.233 12.233 0 0 1-6.2-1.524a.76.76 0 0 1-.317-.8a.768.768 0 0 1 .63-.6a20.6 20.6 0 0 0 3.745-.886C2 13.5 3.19 7.824 3.71 6.081a1.028 1.028 0 0 1 1.729-.422a9.931 9.931 0 0 0 5.995 2.95A4.188 4.188 0 0 1 12.725 5.3a4.125 4.125 0 0 1 5.7.02ZM4.521 17.794c1.862.872 6.226 1.819 9.667.016c2.955-1.549 4.476-4.732 4.521-9.461a.771.771 0 0 1 .142-.436l1.081-1.538l-.041-.053c-.518-.007-1.029-.014-1.55 0a.835.835 0 0 1-.547-.221a3.13 3.13 0 0 0-4.383-.072a3.174 3.174 0 0 0-.935 2.87a.646.646 0 0 1-.154.545a.591.591 0 0 1-.516.205a10.924 10.924 0 0 1-7.084-3.295c-.67 2.078-1.52 7.094 3.869 9.065a.632.632 0 0 1 .416.538a.625.625 0 0 1-.3.6a13.178 13.178 0 0 1-4.186 1.237Zm7.354-9.144Zm7.793-.161Z"
-              />
+              <g
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <path d="M0 0h24v24H0z" />
+                <path
+                  fill="white"
+                  d="M12 7a5 5 0 1 1-4.995 5.217L7 12l.005-.217A5 5 0 0 1 12 7z"
+                />
+              </g>
             </svg>
+            <span>full time freelancer</span>
+          </div>
+          <div class="about-text">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="15"
+              height="15"
               viewBox="0 0 24 24"
             >
-              <path
-                fill="white"
-                fill-rule="evenodd"
-                d="M10.488 3.788A5.25 5.25 0 0 1 14.2 2.25h2.7a.75.75 0 0 1 .75.75v3.6a.75.75 0 0 1-.75.75h-2.7a.15.15 0 0 0-.15.15v1.95h2.85a.75.75 0 0 1 .728.932l-.9 3.6a.75.75 0 0 1-.728.568h-1.95V21a.75.75 0 0 1-.75.75H9.7a.75.75 0 0 1-.75-.75v-6.45H7a.75.75 0 0 1-.75-.75v-3.6A.75.75 0 0 1 7 9.45h1.95V7.5a5.25 5.25 0 0 1 1.538-3.712ZM14.2 3.75a3.75 3.75 0 0 0-3.75 3.75v2.7a.75.75 0 0 1-.75.75H7.75v2.1H9.7a.75.75 0 0 1 .75.75v6.45h2.1V13.8a.75.75 0 0 1 .75-.75h2.114l.525-2.1H13.3a.75.75 0 0 1-.75-.75V7.5a1.65 1.65 0 0 1 1.65-1.65h1.95v-2.1H14.2Z"
-                clip-rule="evenodd"
-              />
+              <g
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <path d="M0 0h24v24H0z" />
+                <path
+                  fill="white"
+                  d="M12 7a5 5 0 1 1-4.995 5.217L7 12l.005-.217A5 5 0 0 1 12 7z"
+                />
+              </g>
             </svg>
+            <span>Avid learner</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <path d="M0 0h24v24H0z" />
+                <path
+                  fill="white"
+                  d="M12 7a5 5 0 1 1-4.995 5.217L7 12l.005-.217A5 5 0 0 1 12 7z"
+                />
+              </g>
+            </svg>
+            <span>Aspiring indie hacker</span>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- end header -->
-    <!-- About -->
-    <div class="about">
-      <div class="about-content">
-        <h1>About</h1>
-        <div class="about-item">
-          <img src="" alt="">
-        </div>
-        <div class="about-item">
-          <h2>Curious about me?Here you have it:</h2>
-          <p>I'm a passionate,self-prochaimed who specialisez in full stack development (React.js & Node.js).I am very enthusiactic about  bringing the technical and visual aspects of digital products to life.User experience,pixel perfect design and writing clear,readable,highly performant code matters to me.</p>
-          <p>I began my journey as a web developer in 2015,and since then,I've continued</p>
+          <p>
+            One last thing,I'm available for freelancer work,so feel to reach
+            out and say hello! I promise I don't bite
+          </p>
         </div>
       </div>
     </div>
     <!-- end About -->
+    <!-- skill -->
+    <!-- <div class="skill">
+      <div class="skill-contener">
+        <div class="skill-item">
+          <div class="skill-layouts">
+            <img src="assets/icones/icon-javscript-1.svg" alt="">
+          </div>
+          <div class="skill-layouts">
+            <img src="assets/icones/icon-typescript-1.svg" alt="">
+          </div>
+          <div class="skill-layouts">
+            <img src="assets/icones/icon-react.svg" alt="">
+          </div>
+          <div class="skill-layouts">
+            <img src="assets/icones/icon-nextjs-1.svg" alt="">
+          </div>
+          <div class="skill-layouts">
+            <img src="assets/icones/icon-typescript-1.svg" alt="">
+          </div>
+          <div class="skill-layouts">
+            <img src="assets/icones/icon-typescript-1.svg" alt="">
+          </div>
+          <div class="skill-layouts">
+            <img src="assets/icones/icon-typescript-1.svg" alt="">
+          </div>
+          <div class="skill-layouts">
+            <img src="assets/icones/icon-typescript-1.svg" alt="">
+          </div>
+          <div class="skill-layouts">
+            <img src="assets/icones/icon-typescript-1.svg" alt="">
+          </div>
+          <div class="skill-layouts">
+            <img src="assets/icones/icon-typescript-1.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- end skill -->
   </body>
 </html>
