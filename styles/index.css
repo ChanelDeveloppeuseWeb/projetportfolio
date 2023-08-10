@@ -13,6 +13,9 @@
 @font-face {
   font-family: poppins;
   src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+font-face {
+  font-family: poppins-bold;
   src: url(../assets/fonts/Poppins-BoldItalic.ttf);
 }
 
@@ -41,6 +44,7 @@ body {
   font-size: 34px;
   color: var(--white);
   font-family:var(--fontschild);
+  font-weight: 900;
 }
 .navbar {
   display: flex;
