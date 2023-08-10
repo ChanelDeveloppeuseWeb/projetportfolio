@@ -28,7 +28,7 @@ body {
   /* width: 80%; */
   margin: auto;
   box-sizing: border-box;
-  background-color: var(--blue);
+  /* background-color: var(--blue); */
   color: var(--white);
 }
 .header {
@@ -37,6 +37,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
+  margin: auto;
+  background-color: var(--blue); 
   /* background: var(--green);  */
 }
 .logo {
@@ -46,6 +48,8 @@ body {
   color: var(--white);
   font-family: var(--fontschild);
   font-weight: 900;
+   
+
 }
 .logo::before {
   content: "";
@@ -184,7 +188,9 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 60vh;
+  background-color: var(--blue);
+  margin: auto;
+
 }
 .banner-layout {
   width: 60%;
@@ -307,6 +313,7 @@ body {
   padding: 35px;
   text-align: center;
   letter-spacing: 1px;
+  margin: auto;
   
 }
 .about a {
@@ -377,7 +384,8 @@ body {
 .skill {
   background-color: var(--blue);
   padding-top: 55px;
-  height: 60vh;
+  /* height: 60vh; */
+  margin: auto;
 }
 .skill a {
   font-size: 15px;
@@ -418,6 +426,7 @@ body {
   background-color: var(--bluechild);
   padding-top: 70px;
   padding-bottom: 50px;
+  margin: auto;
 }
 .experience a {
   font-size: 15px;
@@ -490,6 +499,7 @@ body {
   background-color: var(--blue);
   padding-top: 70px;
   padding-bottom: 50px;
+  margin: auto;
 }
 .work a {
   padding: 5px 2.5%;
@@ -515,9 +525,9 @@ body {
 .work-item {
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-right: 25px;
-  padding-left: 25px;
-  width: 60%;
+  padding-right: 35px;
+  padding-left: 35px;
+  width: 40%;
   background-color: #374151;
   height: auto;
   border-top-left-radius: 10px;
@@ -564,6 +574,7 @@ body {
 .testimonials {
   background-color: var(--bluechild);
   padding-top: 70px;
+  margin: auto;
 }
 .testimonials a {
   padding: 5px 2.5%;
@@ -584,9 +595,8 @@ body {
 }
 .testimonials-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  margin-top: 35px;
   padding-bottom: 70px;
   transition: 1s;
 }
@@ -596,6 +606,7 @@ body {
   background-color: #1f2937;
   width: 20%;
   border-radius: 12px;
+ 
  
 }
 .testimonials-item:hover{
@@ -631,6 +642,7 @@ body {
 .contact {
   background-color: var(--blue);
   padding: 50px 80px;
+  margin: auto;
 }
 .contact a {
   padding: 5px 10px;
@@ -682,6 +694,7 @@ body {
   justify-content: center;
   background-color: var(--bluechild);
   padding: 30px 25px;
+  margin: auto;
 }
 .footer-item {
   display: flex;
@@ -695,6 +708,7 @@ body {
   color: 10px;
   color: var(--gray);
   opacity: 0.8;
+  font-size: 12px;
 }
 
 /* end footer */
@@ -721,6 +735,30 @@ query pour les petits écrans */
   .menu li {
     margin-left: 15px;
   }
+
+  .testimonials-container {
+    display: flex;
+    flex-direction: column;
+   
+    /* justify-content: space-around;
+    align-items: center;
+    
+    padding-bottom: 70px;
+    transition: 1s; */
+  }
+  .testimonials-item{
+    width: 35%;
+    margin-top: 35px;
+  }
+.work-item {
+width: 50%;
+}
+.work-item img{
+  width: 100%;
+  margin: auto;
+}
+.experience-item{
+  width: 80%;
 }
 
 /* animation keyframes */
