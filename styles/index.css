@@ -184,7 +184,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  height: 60vh;
 }
 .banner-layout {
   width: 60%;
@@ -304,21 +304,18 @@ body {
 /* about */
 .about {
   background-color: var(--bluechild);
-  padding: 100px 10%;
+  padding: 35px;
+  text-align: center;
+  letter-spacing: 1px;
+  
 }
 .about a {
-  padding: 5px 2.5%;
+  padding: 5px 10px;
   font-size: 15px;
   text-decoration: none;
   background-color: var(--graychild);
   border-radius: 20px;
-  margin: auto;
   opacity: 0.6;
-}
-.about {
-  text-align: center;
-  padding-bottom: 0;
-  letter-spacing: 1px;
 }
 .about .about-content {
   display: flex;
@@ -334,7 +331,7 @@ body {
 .about .about-content .about-item p {
   color: var(--gray);
   opacity: 0.7;
-  line-height: 2;
+  line-height: 1.5;
   font-size: 10px;
   letter-spacing: 0.6;
 }
@@ -593,12 +590,7 @@ body {
   padding-bottom: 70px;
   transition: 1s;
 }
-.testimonials-container:hover{
-  cursor: pointer;
-  background-color: var(--blue);
-  box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.9);
-  /* transform: scale(0.1s); */
-  }
+
 .testimonials-item {
   padding: 35px;
   background-color: #1f2937;
@@ -606,6 +598,12 @@ body {
   border-radius: 12px;
  
 }
+.testimonials-item:hover{
+  cursor: pointer;
+  background-color: var(--blue);
+  box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.9);
+  /* transform: scale(0.1s); */
+  }
 .testimonials-item p {
   font-size: 12.5px;
   color: var(--gray);
@@ -667,9 +665,10 @@ body {
 .contact-item svg:hover {
   opacity: 0.2;
 }
-.contact-item span {
-  font-size: 22px;
+.contact-item span a {
+  font-size: 25px;
   font-weight: 900;
+  color: var(--white)!important;
 }
 .contact-item p {
   font-size: 14px;
