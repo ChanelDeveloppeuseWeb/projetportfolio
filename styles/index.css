@@ -8,7 +8,7 @@
   --black: #121212;
   --blue: #030712;
   --fonts: poppins, sans-serif;
-  --fontschild: poppins-bold,sans-serif;
+  --fontschild: poppins-bold, sans-serif;
 }
 @font-face {
   font-family: poppins;
@@ -40,11 +40,23 @@ body {
   /* background: var(--green);  */
 }
 .logo {
+  position: relative;
   text-decoration: none;
   font-size: 34px;
   color: var(--white);
-  font-family:var(--fontschild);
+  font-family: var(--fontschild);
   font-weight: 900;
+}
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.1s;
+  background-color: var(--blue);
 }
 .navbar {
   display: flex;
@@ -93,7 +105,7 @@ body {
 .menu a {
   text-decoration: none;
   color: var(--white);
-  transition: color 0.3s ease;
+  transition: color 1s ease;
 }
 .menu a:hover {
   color: var(--bluechild);
@@ -105,7 +117,7 @@ body {
   padding: 10px 20px;
   margin-left: 15px;
   color: var(--blue);
-  transition: 0.1s;
+  transition: 1s;
 }
 
 .dowload a:hover {
@@ -177,16 +189,40 @@ body {
   width: 60%;
 }
 .banner-layout h1 {
+  position: relative;
   font-weight: 900;
   font-size: 49px;
+}
+.banner-layout h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.2s;
+  background-color: var(--blue);
 }
 .banner-layout svg {
   vertical-align: text-bottom;
 }
 .banner-layout p {
+  position: relative;
   font-size: 13px;
   letter-spacing: 0.3;
   line-height: 1.5;
+}
+.banner-layout p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.3s;
+  background-color: var(--blue);
 }
 
 .banner-layout:nth-child(2) {
@@ -363,7 +399,7 @@ body {
 }
 .experience-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #1f2937;
   height: 250px;
   margin: 0 100px;
@@ -374,7 +410,7 @@ body {
   margin-top: 35px;
 }
 .experience-item {
-  width: 30%;
+  width: 100%;
 }
 .experience-item span {
   color: var(--green);
@@ -478,7 +514,6 @@ body {
 .testimonials {
   background-color: var(--bluechild);
   padding-top: 70px;
-  padding-bottom: 50px;
 }
 .testimonials a {
   padding: 5px 2.5%;
@@ -502,13 +537,14 @@ body {
   justify-content: space-around;
   align-items: center;
   margin-top: 35px;
+  padding-bottom: 70px;
 }
 .testimonials-item {
   padding: 35px;
   background-color: #1f2937;
-  width: 30%;
+  width: 20%;
   border-radius: 12px;
-  box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.1);
 }
 .testimonials-item p {
   font-size: 12.5px;
@@ -550,6 +586,11 @@ body {
   color: var(--white);
   padding-bottom: 0;
 }
+.contact a:nth-child(-n + 2) {
+  padding: 0;
+  font-size: 22px;
+  font-weight: 900;
+}
 .contact p {
   font-size: 19px;
   text-align: center;
@@ -563,6 +604,7 @@ body {
 }
 .contact-item svg {
   padding-right: 15px;
+  vertical-align: text-bottom;
 }
 .contact-item span {
   font-size: 22px;
@@ -581,20 +623,19 @@ body {
   background-color: var(--bluechild);
   padding: 30px 25px;
 }
-.footer-item{
+.footer-item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer-item svg{
+.footer-item svg {
   vertical-align: bottom;
 }
-.footer-item span{
+.footer-item span {
   color: 10px;
   color: var(--gray);
   opacity: 0.8;
 }
-
 
 /* end footer */
 
@@ -619,5 +660,13 @@ query pour les petits écrans */
 
   .menu li {
     margin-left: 15px;
+  }
+}
+
+/* animation keyframes */
+
+@keyframes showRight {
+  100% {
+    width: 0;
   }
 }
