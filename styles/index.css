@@ -105,10 +105,11 @@ body {
 .menu a {
   text-decoration: none;
   color: var(--white);
-  transition: color 1s ease;
+  transition: 1s ease;
 }
 .menu a:hover {
-  color: var(--bluechild);
+  color: var(--green);
+  border-bottom: 20%;
 }
 .dowload a {
   text-decoration: none;
@@ -212,6 +213,7 @@ body {
   font-size: 13px;
   letter-spacing: 0.3;
   line-height: 1.5;
+  opacity: 0.8;
 }
 .banner-layout p::before {
   content: "";
@@ -247,23 +249,56 @@ body {
   z-index: -1;
 }
 .banner-localisation .banner-local {
+  position: relative;
   margin-bottom: 10px;
 }
+.banner-localisation .banner-local::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.3s;
+  background-color: var(--blue);
+}
+
 .banner-localisation .banner-local svg {
   vertical-align: text-bottom;
+  transition: 1s;
 }
+.banner-localisation .banner-local svg:hover{
+  opacity: 0.2;
+}
+
 .banner-links {
+  position: relative;
   margin-top: 50px;
+}
+.banner-links::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.4s;
+  background-color: var(--blue);
 }
 .banner-links svg {
   padding-left: 15px;
   transition: 0.4s;
   padding-bottom: 20px;
+  transition: 1s;
 }
-.banner-links svg:hover {
-  color: var(--green);
+
+.banner-links svg:hover{
+  /* color: var(--green); */
   opacity: 0.2;
 }
+
 /* end banner */
 
 /* about */
@@ -359,7 +394,8 @@ body {
 }
 .skill p {
   text-align: center;
-  padding-bottom: 0;
+  padding-bottom: 0px;
+  padding-top: 0;
   letter-spacing: 1px;
 }
 .skill-contener {
@@ -372,6 +408,11 @@ body {
   margin: auto;
   width: 100px;
   height: auto;
+  transition: 1s;
+}
+.skill-contener img:hover{
+  opacity: 0.4;
+  cursor: pointer;
 }
 
 /* end skill */
@@ -408,10 +449,18 @@ body {
   padding-right: 15px;
   padding-left: 15px;
   margin-top: 35px;
+  transition: 1s;
 }
+.experience-container:hover{
+  cursor: pointer;
+  background-color: var(--blue);
+  box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.1);
+  /* transform: scale(0.1s); */
+  }
 .experience-item {
   width: 100%;
 }
+
 .experience-item span {
   color: var(--green);
   font-weight: bold;
@@ -538,13 +587,20 @@ body {
   align-items: center;
   margin-top: 35px;
   padding-bottom: 70px;
+  transition: 1s;
 }
+.testimonials-container:hover{
+  cursor: pointer;
+  background-color: var(--blue);
+  box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.9);
+  /* transform: scale(0.1s); */
+  }
 .testimonials-item {
   padding: 35px;
   background-color: #1f2937;
   width: 20%;
   border-radius: 12px;
-  box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.1);
+ 
 }
 .testimonials-item p {
   font-size: 12.5px;
@@ -605,6 +661,10 @@ body {
 .contact-item svg {
   padding-right: 15px;
   vertical-align: text-bottom;
+  transition: 1s;
+}
+.contact-item svg:hover {
+  opacity: 0.2;
 }
 .contact-item span {
   font-size: 22px;
