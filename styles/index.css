@@ -192,7 +192,7 @@ body {
 .banner-layout h1 {
   position: relative;
   font-weight: 900;
-  font-size: 49px;
+  font-size: 35px;
 }
 .banner-layout h1::before {
   content: "";
