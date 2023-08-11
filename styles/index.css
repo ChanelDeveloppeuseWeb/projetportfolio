@@ -34,11 +34,11 @@ body {
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-top: 10px;
   margin: auto;
-  background-color: var(--blue); 
+  background-color: var(--blue);
   /* background: var(--green);  */
 }
 .logo {
@@ -48,8 +48,6 @@ body {
   color: var(--white);
   font-family: var(--fontschild);
   font-weight: 900;
-   
-
 }
 .logo::before {
   content: "";
@@ -112,7 +110,7 @@ body {
   transition: 1s ease;
 }
 .menu a:hover {
-  color: var(--graychild)!important;
+  color: var(--graychild) !important;
   border-bottom: 1px solid var(--white);
 }
 .dowload a {
@@ -190,11 +188,13 @@ body {
   align-items: center;
   background-color: var(--blue);
   margin: auto;
-
+  height: 80vh;
+  padding: 0 10%;
 }
 .banner-layout {
-  width: 60%;
+  width: 50%;
 }
+
 .banner-layout h1 {
   position: relative;
   font-weight: 900;
@@ -220,6 +220,7 @@ body {
   letter-spacing: 0.3;
   line-height: 1.5;
   opacity: 0.8;
+  text-align: justify;
 }
 .banner-layout p::before {
   content: "";
@@ -239,7 +240,7 @@ body {
 .banner-picture {
   width: 70%;
   height: auto;
-  margin-left: auto; 
+  margin-left: auto;
 }
 .banner-picture img {
   border-right: 30px solid #374151;
@@ -274,7 +275,7 @@ body {
   vertical-align: text-bottom;
   transition: 1s;
 }
-.banner-localisation .banner-local svg:hover{
+.banner-localisation .banner-local svg:hover {
   opacity: 0.2;
 }
 
@@ -300,7 +301,7 @@ body {
   transition: 1s;
 }
 
-.banner-links svg:hover{
+.banner-links svg:hover {
   /* color: var(--green); */
   opacity: 0.2;
 }
@@ -310,11 +311,10 @@ body {
 /* about */
 .about {
   background-color: var(--bluechild);
-  padding: 35px;
   text-align: center;
   letter-spacing: 1px;
   margin: auto;
-  
+  padding: 40px 70px 35px 35px;
 }
 .about a {
   padding: 5px 10px;
@@ -330,17 +330,19 @@ body {
   margin-top: 25px;
 }
 .about-item {
-  width: 50%;
+  width: 45%;
 }
 .about-item h2 {
   font-size: 18px;
+  text-align: start;
+  margin-top: 0;
 }
 .about .about-content .about-item p {
   color: var(--gray);
   opacity: 0.7;
   line-height: 1.5;
-  font-size: 10px;
-  letter-spacing: 0.6;
+  font-size: 12px;
+  text-align: start;
 }
 .about .about-content .about-item .me {
   text-decoration: underline;
@@ -361,11 +363,15 @@ body {
 .about .about-content .about-item .cursus ul {
   padding-left: 10px;
 }
+.about-pictu {
+  height: auto;
+}
 
 .about-picture img {
-  border-left: 30px solid #374151;
-  border-bottom: 30px solid #374151;
+  border-left: 20px solid #374151;
+  border-bottom: 20px solid #374151;
   width: 70%;
+  height: auto;
 }
 
 .about-text svg {
@@ -384,6 +390,7 @@ body {
 .skill {
   background-color: var(--blue);
   padding-top: 55px;
+  padding-bottom: 55px;
   /* height: 60vh; */
   margin: auto;
 }
@@ -406,8 +413,8 @@ body {
 .skill-contener {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  /* align-items: center; */
 }
 .skill-contener img {
   margin: auto;
@@ -415,7 +422,7 @@ body {
   height: auto;
   transition: 1s;
 }
-.skill-contener img:hover{
+.skill-contener img:hover {
   opacity: 0.4;
   cursor: pointer;
 }
@@ -457,14 +464,15 @@ body {
   margin-top: 35px;
   transition: 1s;
 }
-.experience-container:hover{
+.experience-container:hover {
   cursor: pointer;
   background-color: var(--blue);
   box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.1);
   /* transform: scale(0.1s); */
-  }
+}
 .experience-item {
   width: 100%;
+  height: auto;
 }
 
 .experience-item span {
@@ -507,7 +515,6 @@ body {
   text-decoration: none;
   background-color: var(--graychild);
   border-radius: 20px;
-  margin: auto;
   opacity: 0.6;
   color: var(--white);
 }
@@ -548,7 +555,7 @@ body {
   height: autogi;
   transition: 1s;
 }
-.work-item img:hover{
+.work-item img:hover {
   transform: scale(1.05);
 }
 .work-item h1 {
@@ -558,7 +565,7 @@ body {
   font-size: 11px;
   text-align: justify;
 }
-.work-item a {
+.work-links a {
   padding: 5px 2.5%;
   font-size: 15px;
   text-decoration: none;
@@ -566,7 +573,8 @@ body {
   border-radius: 20px;
   opacity: 0.6;
   color: var(--white);
-  margin-left: 0;
+  margin: 0;
+  margin-top: 15px;
 }
 /* end work */
 
@@ -577,7 +585,7 @@ body {
   margin: auto;
 }
 .testimonials a {
-  padding: 5px 2.5%;
+  padding: 5px 15px;
   font-size: 15px;
   text-decoration: none;
   background-color: var(--graychild);
@@ -606,15 +614,13 @@ body {
   background-color: #1f2937;
   width: 20%;
   border-radius: 12px;
- 
- 
 }
-.testimonials-item:hover{
+.testimonials-item:hover {
   cursor: pointer;
   background-color: var(--blue);
   box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.9);
   /* transform: scale(0.1s); */
-  }
+}
 .testimonials-item p {
   font-size: 12.5px;
   color: var(--gray);
@@ -654,7 +660,7 @@ body {
   opacity: 0.6;
   color: var(--white);
 }
-.contact .contact-item a{
+.contact .contact-item a {
   padding: 0;
   background-color: transparent;
 }
@@ -680,7 +686,7 @@ body {
 .contact-item span a {
   font-size: 25px;
   font-weight: 900;
-  color: var(--white)!important;
+  color: var(--white) !important;
 }
 .contact-item p {
   font-size: 14px;
@@ -739,28 +745,54 @@ query pour les petits écrans */
   .testimonials-container {
     display: flex;
     flex-direction: column;
-   
+
     /* justify-content: space-around;
     align-items: center;
     
     padding-bottom: 70px;
     transition: 1s; */
   }
-  .testimonials-item{
+  .testimonials-item {
     width: 35%;
     margin-top: 35px;
   }
-.work-item {
-width: 50%;
+  .work-item {
+    width: 50%;
+  }
+  .work-item img {
+    width: 100%;
+    margin: auto;
+  }
+  .experience-item {
+    max-width: 100%;
+  }
+  .work-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+  }
+  .work-links a {
+    padding: 5px 20px;
+    font-size: 15px;
+  }
+  /* contact */
+  .contact p {
+    font-size: 15px;
+  }
+  .contact-item p {
+    font-size: 10px;
+  }
+  .contact-item span a {
+    font-size: 20px;
+  }
+  .contact-item svg {
+    font-size: 15px;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
 }
-.work-item img{
-  width: 100%;
-  margin: auto;
-}
-.experience-item{
-  width: 80%;
-}
-
 /* animation keyframes */
 
 @keyframes showRight {
