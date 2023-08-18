@@ -38,7 +38,7 @@ a {
 
 .navbar {
   position: fixed;
-  width: 99%;
+  width: 100%;
   margin: auto;
   top: 0;
   right: 0;
@@ -393,7 +393,8 @@ a {
   font-weight: bold;
 }
 .about-text svg {
-  vertical-align: middle;
+  vertical-align: bottom;
+  margin: -5px;
 }
 .about-text .about-passion {
   font-weight: bold;
@@ -414,10 +415,14 @@ a {
   line-height: 1.7;
   padding-left: 0px;
 }
-.about .cursus .cursus-item svg {
-  vertical-align: top;
+ .cursus .cursus-item  svg {
+  vertical-align: bottom;
   margin-right: 7px;
-  margin-top: -2px;
+  
+}
+.cursus .cursus-item .svg-cursus{
+vertical-align: bottom;
+margin-right: 10px;
 }
 /* end about */
 
@@ -499,17 +504,16 @@ a {
   width: 80%;
   height: auto;
   margin: auto;
-  display: flex;
+  display:flex;
   justify-content: space-around;
   background-color: #1f2937;
-  /* margin: 0 100px; */
   border-radius: 10px;
-  padding-top: 40px;
-  /* padding-right: 15px;
-  padding-left: 15px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-top: 35px;
   transition: 1s;
-  padding-left: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .experience-container:hover {
   cursor: pointer;
@@ -518,14 +522,18 @@ a {
   /* transform: scale(0.1s); */
 }
 .experience-item {
-  width: 100%;
+  /* width: 50%; */
   height: auto;
   margin: auto;
+}
+.experience-work{
+  width: 100%;
 }
 
 .experience-item span {
   color: var(--green);
   font-weight: bold;
+  
 }
 .experience-item h1 {
   font-size: 15px;
@@ -540,12 +548,11 @@ a {
   letter-spacing: 0.6;
 }
 .experience-item p {
-  padding-left: 0;
   font-size: 12px;
   margin-top: 0;
   margin: auto;
 }
-.experience-work ul {
+.experience-work ul li{
   padding-left: 18px;
 }
 /* end experience */
@@ -828,37 +835,7 @@ query pour les petits écrans */
     width: 70%;
     margin-top: 35px;
   }
-  /* work */
-  .work-item {
-    width: 70%;
-    
-  }
-  .work-item:nth-child(2) {
-    width: 70%;
-  }
-  .work-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 35px;
-  }
-  .work-item img {
-    width: 100%;
-    margin: auto;
-  }
-  .experience-item {
-    max-width: 80%;
-    margin: auto;
-  }
-  .work-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: auto;
-  }
-  .work-links a {
-    padding: 5px 20px;
-    font-size: 15px;
-  }
-  /* work */
+  
 
   /* contact */
   .contact p {
@@ -922,14 +899,53 @@ query pour les petits écrans */
 
 /* .experience */
   .experience-container {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
+}
+.experience-item {
+  width: 70%;
+  margin: auto;
+}
+.experience-item p {
+  text-align: left;
+}
+.experience-work ul{
+  padding-left: 0px;
+}
+
+/* work */
+.work-item {
+  width: 70%;
+  
+}
+.work-item:nth-child(2) {
+  width: 70%;
+}
+.work-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+.work-item img {
+  width: 100%;
+  margin: auto;
+}
+.experience-work ul {
+  padding-left: 18px;
+}
+
+.work-links {
+  flex-wrap: wrap;
   justify-content: center;
+  margin-left: auto;
 }
-  .experience-item{
-width: 35%;
+.work-links a {
+  padding: 5px 20px;
+  font-size: 15px;
 }
+/* work */
 }
 /* animation keyframes */
 
