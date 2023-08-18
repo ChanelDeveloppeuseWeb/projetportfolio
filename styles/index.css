@@ -401,7 +401,7 @@ a {
   color: var(--white);
 }
 .about a {
-  padding: 5px 10px;
+  padding: 8px 23px;
   font-size: 15px;
   text-decoration: none;
   background-color: var(--graychild);
@@ -434,7 +434,7 @@ a {
 .skill a {
   font-size: 15px;
   text-decoration: none;
-  padding: 5px 2.5%;
+  padding: 5px 23px;
   background-color: var(--graychild);
   border-radius: 20px;
   opacity: 0.6;
@@ -483,7 +483,7 @@ a {
 .experience a {
   font-size: 15px;
   text-decoration: none;
-  padding: 5px 2.5%;
+  padding: 8px 23px;
   background-color: var(--graychild);
   border-radius: 20px;
   margin: auto;
@@ -501,7 +501,7 @@ a {
   height: auto;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #1f2937;
   /* margin: 0 100px; */
   border-radius: 10px;
@@ -560,7 +560,7 @@ a {
   /* margin: auto; */
 }
 .work a {
-  padding: 5px 2.5%;
+  padding: 8px 23px;
   font-size: 15px;
   text-decoration: none;
   background-color: var(--graychild);
@@ -636,6 +636,9 @@ a {
   margin: 0;
   margin-top: 15px;
 }
+.work-linke{
+  margin-top: 20px;
+}
 
 /* testimonials */
 .testimonials {
@@ -646,7 +649,7 @@ a {
   margin: auto;
 }
 .testimonials a {
-  padding: 5px 15px;
+  padding: 8px 23px;
   font-size: 15px;
   text-decoration: none;
   background-color: var(--graychild);
@@ -716,8 +719,8 @@ a {
   padding-right: 0;
 }
 .contact a {
-  padding: 5px 10px;
-  font-size: 15px;
+  padding: 8px 23px;
+  font-size:15px ;
   text-decoration: none;
   background-color: var(--graychild);
   border-radius: 20px;
@@ -841,7 +844,7 @@ query pour les petits écrans */
     margin: auto;
   }
   .experience-item {
-    max-width: 100%;
+    max-width: 80%;
     margin: auto;
   }
   .work-links {
@@ -884,6 +887,9 @@ query pour les petits écrans */
     float: none;
     width: 100%;
   }
+  .banner-layout h1 {
+    font-size: 30px;
+  }
   /*end banner */
 
   /* about */
@@ -919,14 +925,9 @@ query pour les petits écrans */
   flex-direction: column;
   justify-content: center;
 }
-.experience-item{
-  
+  .experience-item{
+width: 35%;
 }
-/* .experience */
-
-  /* work */
-
-  /*end work */
 }
 /* animation keyframes */
 
