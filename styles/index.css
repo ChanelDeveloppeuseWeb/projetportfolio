@@ -40,7 +40,7 @@ a {
 
 .navbar {
   position: fixed;
-  width: 95%;
+  width: 100%;
   margin: auto;
   top: 0;
   right: 0;
@@ -56,6 +56,9 @@ a {
 .menu-btn {
   display: none;
   cursor: pointer;
+  margin: auto;
+  
+
 }
 
 .menu-icon {
@@ -259,8 +262,8 @@ a {
   width: 40%;
 }
 .banner-picture img {
-  border-right: 30px solid #374151;
-  border-bottom: 30px solid #374151;
+  border-right: 25px solid #374151;
+  border-bottom: 25px solid #374151;
   width: 100%;
   margin: auto;
   height: auto;
@@ -342,9 +345,12 @@ a {
 
 .container {
   width: 80%;
-  display: block;
+  display: flex;
+  justify-content: space-around;
   margin: auto;
   padding-top: 100px;
+  width: 80%;
+  margin: auto;
 }
 .content-section {
   float: right;
@@ -362,7 +368,7 @@ a {
 }
 .about-image {
   float: left;
-  width: 25%;
+  width: 30%;
 }
 
 .about-image img {
@@ -453,7 +459,6 @@ a {
   flex-wrap: wrap;
   justify-content:space-around;
   align-items: center;
-  padding: ;
   /* padding-left: 10px;;
   padding-top: 100px; */
   /* align-items: center; */
@@ -502,7 +507,6 @@ a {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: #1f2937;
   /* margin: 0 100px; */
   border-radius: 10px;
@@ -511,6 +515,7 @@ a {
   padding-left: 15px; */
    margin-top: 35px;
   transition: 1s;
+  padding-left: 20px;
 }
 .experience-container:hover {
   cursor: pointer;
@@ -839,6 +844,7 @@ query pour les petits écrans */
   }
   .experience-item {
     max-width: 100%;
+    margin: auto;
   }
   .work-links {
     flex-wrap: wrap;
@@ -867,10 +873,7 @@ query pour les petits écrans */
     display: flex;
     flex-direction: column;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin-left: 10px;
+     /* margin-left: 10px;
     margin-right: 10px; */
   }
   .banner-content {
@@ -885,13 +888,13 @@ query pour les petits écrans */
 
   /* about */
   .container {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
     /* end about */
   }
   .content-section {
