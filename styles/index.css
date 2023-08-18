@@ -38,11 +38,11 @@ a {
 
 .navbar {
   position: fixed;
-  width: 100%;
+  width: 99%;
   margin: auto;
   top: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 100;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -89,7 +89,7 @@ a {
 }
 
 .menu li {
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 .menu a {
@@ -100,6 +100,7 @@ a {
 
 .menu a:hover {
   color: var(--green);
+  border-bottom:2px solid var(--green) ;
 }
 .menu a.active {
   color: var(--green);
@@ -133,6 +134,7 @@ a {
   color: var(--white);
   font-family: var(--fontschild);
   font-weight: 900;
+  margin-left: 50px;
 }
 .logo span {
   color: var(--green);
@@ -175,10 +177,11 @@ a {
   margin-left: 15px;
   color: var(--blue);
   transition: 1s;
+  margin-right: 50px;
 }
 
 .dowload a:hover {
-  background-color: var(--bluechild);
+  background-color:var(--green);
   color: var(--white);
 }
 #menu-icon {
@@ -201,17 +204,18 @@ a {
   overflow-y: hidden;
 }
 .banner-layout {
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding-top: 100px;
 }
 .banner-content {
   width: 50%;
 }
 .banner-picture {
-  width: 40%;
+  width: 20%;
 }
 
 .banner-layout h1 {
@@ -257,8 +261,8 @@ a {
   width: 40%;
 }
 .banner-picture img {
-  border-right: 25px solid #374151;
-  border-bottom: 25px solid #374151;
+  /* border-right: 25px solid #374151;
+  border-bottom: 25px solid #374151; */
   width: 100%;
   margin: auto;
   height: auto;
@@ -339,17 +343,15 @@ a {
 }
 
 .container {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   margin: auto;
-  padding-top: 100px;
-  width: 80%;
+  padding-top: 25px;
   margin: auto;
 }
 .content-section {
-  float: right;
-  width: 50%;
+  width: 40%;
 }
 .about-title h2 {
   text-align: center;
@@ -362,22 +364,19 @@ a {
   line-height: 1.7;
 }
 .about-image {
-  float: left;
-  width: 30%;
+  width: 20%;
 }
 
 .about-image img {
   width: 100%;
   height: auto;
-  display: block;
   margin: auto;
-  border: 4px solid gray;
 }
-.about-profil {
+/* .about-profil {
   top: 2.5rem;
   left: -0.7rem;
   z-index: 10;
-}
+} */
 .about-text h2 {
   line-height: 1;
   font-size: 17px;
@@ -567,6 +566,7 @@ a {
   border-radius: 20px;
   opacity: 0.6;
   color: var(--white);
+ 
 }
 .work p {
   text-align: center;
@@ -596,6 +596,7 @@ a {
   border-top-right-radius: 10;
   border-bottom-right-radius: 10;
   border-bottom-left-radius: 0px;
+  
 }
 .work-item:nth-child(2) {
   background-color: #1f2937;
@@ -624,6 +625,7 @@ a {
 .work-item p {
   font-size: 11px;
   text-align: justify;
+  margin-bottom: 25px;
 }
 .work-links {
   padding: 5px 2.5%;
