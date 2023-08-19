@@ -920,6 +920,9 @@ query pour les petits écrans */
   /*end skill */
 
 /* .experience */
+.experience p{
+  font-size: 12px;
+}
   .experience-container {
   /* width: 100%; */
   display: flex;
@@ -942,11 +945,13 @@ query pour les petits écrans */
   font-size: 12px;
 }
 .work-item {
-  width: 90%;
+  width: 80%;
+  
   
 }
 .work-item:nth-child(2) {
-  width: 90%;
+  width: 80%;
+
 }
 .work-container {
   display: flex;
