@@ -846,6 +846,8 @@ query pour les petits écrans */
   .testimonials-container {
     display: flex;
     flex-direction: column;
+    margin-left:10px;
+    margin-right: 10px;
   }
   .testimonials-item {
     width: 70%;
@@ -871,6 +873,8 @@ query pour les petits écrans */
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-left:10px;
+    margin-right: 10px;
     /* margin-left: 10px;
     margin-right: 10px; */
   }
@@ -894,6 +898,8 @@ query pour les petits écrans */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left:10px;
+    margin-right: 10px;
     /* margin-left: 10px;
     margin-right: 10px; */
     /* end about */
