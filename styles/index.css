@@ -938,8 +938,11 @@ query pour les petits écrans */
 }
 
 /* work */
+.work p{
+  font-size: 12px;
+}
 .work-item {
-  width: 70%;
+  width: 80%;
   
 }
 .work-item:nth-child(2) {
