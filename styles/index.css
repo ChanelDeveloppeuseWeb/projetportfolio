@@ -873,8 +873,8 @@ query pour les petits écrans */
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-left:10px;
-    margin-right: 10px;
+    margin-left:15px;
+    margin-right: 15px;
     /* margin-left: 10px;
     margin-right: 10px; */
   }
@@ -898,8 +898,8 @@ query pour les petits écrans */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left:10px;
-    margin-right: 10px;
+    margin-left:15px;
+    margin-right: 15px;
     /* margin-left: 10px;
     margin-right: 10px; */
     /* end about */
@@ -942,11 +942,11 @@ query pour les petits écrans */
   font-size: 12px;
 }
 .work-item {
-  width: 80%;
+  width: 90%;
   
 }
 .work-item:nth-child(2) {
-  width: 70%;
+  width: 90%;
 }
 .work-container {
   display: flex;
