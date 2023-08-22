@@ -886,7 +886,6 @@ query pour les petits écrans */
   .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
   }
   .menu-btn {
     display: block;
@@ -907,9 +906,9 @@ query pour les petits écrans */
   .menu li {
     margin-left: 15px;
   }
-  .menu-icon:hover{
-    display: flex;
-  }
+  /* .menu-icon{
+    float: right;
+  } */
   /* .logo {
     margin-left: -25px;
   } */
